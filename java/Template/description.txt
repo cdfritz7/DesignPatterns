@@ -1,0 +1,41 @@
+Template Method Design Pattern
+
+---------------------------------
+Description
+---------------------------------
+The Template Design Pattern is a simple design pattern that uses a 'template' method in a
+super-class to define an operation as a series of high level steps. These steps
+are then implemented inside classes that inherit from the super-class. The Template
+Method Pattern allows us to define an overall operation while leaving the
+specific implementation to sub-classes. The Template method pattern avoids code
+duplication and allows us to control the points at which specialization by
+sub classes is permitted.
+
+---------------------------------
+Provided Application
+---------------------------------
+The provided super-class (in Template.java) with the template method aggregates and returns the three
+lines of a haiku. The sub-classes (in HaikuOne.java and HaikuTwo.java) implement the
+methods for writing each of the lines in their respective haikus. main.java checks
+each haiku for validitiy.
+
+---------------------------------
+Filling Out the Incomplete Solution
+---------------------------------
+In the "empty" directory there are four python3 files. "HaikuOne.java" and "HaikuTwo.java" only
+hold the header for each class. You must fill out the methods inherited from "Template.java"
+to complete them. Additionally, you must complete the template method and skeleton
+methods in "Template.java".
+
+---------------------------------
+Checking Solution
+---------------------------------
+In the "empty" directory there is another python3 file, "main.java".
+"main.java" runs a simple test of both haikus. You can use the following to run
+main.java
+
+$javac main.java
+$java main
+
+Alternatively, the "complete" directory contains functional the functional
+versions, and an identical "main.java" file.
