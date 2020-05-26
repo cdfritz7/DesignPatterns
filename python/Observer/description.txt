@@ -1,0 +1,39 @@
+Observer Design Pattern
+
+---------------------------------
+Description
+---------------------------------
+The Observer Design Pattern is a simple design pattern in which an object called
+the Observable or Subject, keeps a list of those Objects that depend on it,
+called Observers. The Observable object is able to add and delete Observers,
+and notifies it's Observers when it changes state. Usually, this notification is
+done by calling a method of the Observer (such as observer_instance.notify())
+
+The Observer design pattern is usually applied to event handling systems where
+arrival of data can be asynchronous. This can include stuff like HTTP Requests
+or input from the keyboard or mouse.
+
+---------------------------------
+Provided Application
+---------------------------------
+As an example of the Observer design pattern, we have provided three python3 files,
+Observable.py, Observer.py and main.py. Observable.py represents a parent process,
+while Observer.py represents child processes. Therefore, Observable.py notifies it's
+children of it's current state. main.py runs a small series of tests to check the
+implementation.
+
+---------------------------------
+Filling Out the Incomplete Solution
+---------------------------------
+In the "empty" directory there are three python3 files. Observable.py and
+Observer.py contain comments providing small explanations about what to
+do to complete the Observable Design Pattern implementation.
+
+---------------------------------
+Checking Solution
+---------------------------------
+In the "empty" directory there is another python3 file, main.py.
+main.py runs a series of tests to check the implementation in the "empty" directory.
+
+Alternatively, the "complete" directory contains functional versions of each
+file, and an identical main.java file.

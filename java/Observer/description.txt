@@ -1,0 +1,44 @@
+Observer Design Pattern
+
+---------------------------------
+Description
+---------------------------------
+The Observer Design Pattern is a simple design pattern in which an object called
+the Observable (or Subject) keeps a list of those Objects that depend on it,
+(Observers). The Observable object is able to add and delete Observers,
+and notifies its Observers when it changes state. Usually, this notification is
+done by calling a method of the Observer (such as observer_instance.notify())
+
+The Observer design pattern is usually applied to event handling systems where
+arrival of data can be asynchronous. This can include stuff like HTTP Requests
+or input from the keyboard or mouse.
+
+---------------------------------
+Provided Application
+---------------------------------
+As an example of the Observer design pattern, we have provided three .java files,
+Observable.java, Observer.java and main.java. Observable.java represents a parent process,
+while Observer.java represents child processes. Therefore, Observable.java notifies its
+children of its current state. main.java runs a small series of tests to check the
+implementation.
+
+---------------------------------
+Filling Out the Incomplete Solution
+---------------------------------
+In the "empty" directory there are three .java files. Observable.java and
+Observer.java contain comments providing small explanations about what to
+do to complete the Observable Design Pattern implementation.
+
+---------------------------------
+Checking Solution
+---------------------------------
+In the "empty" directory there is another .java file, main.java.
+main.java runs a series of tests to check the implementation in the empty directory.
+You can use the following commands to compile and run the tests within the
+"empty" directory.
+
+$javac main.java
+$java main
+
+Alternatively, the "complete" directory contains functional versions of each
+file, and an identical main.java file.
