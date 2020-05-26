@@ -1,0 +1,63 @@
+Command Design Pattern
+
+---------------------------------
+Description
+---------------------------------
+The Command design pattern is a behavioural design patterns that encapsulates
+all information needed to perform an action into an object to be used at a later
+time. Using the Command Design Pattern is good in situations in which method
+calls need to be recorded, or when method calls need to be executed without
+needing to know the class of the method or the method parameters. The Command
+Design Pattern has four main components - the command objects (both abstract and concrete),
+the receiver objects, the invoker object and the client object.
+
+The concrete command objects generally inherit from the abstact command objects,
+and know about the receiver(s) (which "receives" the command). The command objects
+typically call some method of the receiver and store the parameters for that
+method. The command objects also store the method itself. The command objects
+typically execute the stored method with the stored parameters with their own
+execute() method.
+
+The invoker object knows how to execute commands, and can do book-keeping about
+executing commands. This can include storing a history or validation. However,
+the invoker object only knows about the abstract command that the concrete
+commands inherit from.
+
+The client objects know about the commands, receiver, and invoker. It decides
+which receiver objects it assigns to which commands, and which commands it
+assigns to the invoker.
+
+---------------------------------
+Provided Application
+---------------------------------
+As an example application using the Command Design Pattern, we created a
+simple application to record stock trades. Here, we have the following equivalencies -
+
+stock - receiver object - Receiver.py
+broker - invoker object - Invoker.py
+order - abstract command object - Command.py
+buy order - concrete command object - BuyCommand.py
+sell order - concrete command object - SellCommand.py
+investor - client object - Client.py
+
+main.py runs a simple test for the application.
+
+The logic provided here is not complex. For instance, you can sell stocks you
+never bought. The client calls buy and sell commands through the broker, which
+then records these commands in a history, which the client can access.
+
+---------------------------------
+Filling Out the Incomplete Solution
+---------------------------------
+In the "empty" directory there are seven python3 files. Each (besides main.py)
+contains comments providing small explanations about what to
+do to complete each portion of the Command Design pattern implementation.
+
+---------------------------------
+Checking Solution
+---------------------------------
+In the "empty" directory there is a python3 file, "main.py".
+"main.py" runs a simple test of our Command Design pattern.
+
+Alternatively, the "complete" directory contains the functional implementation,
+and an identical "main.py" file.

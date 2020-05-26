@@ -3,18 +3,42 @@ Singleton Design Pattern
 ---------------------------------
 Description
 ---------------------------------
-
-
----------------------------------
-Purpose
----------------------------------
-
+The Singleton Design Pattern is a simple design pattern that restricts the
+instantiation of a class to a single object. It is used when only a single object is
+needed to coordinate actions across a system. We provide eager and lazy
+implementations of the Singleton Design Pattern. In eager instantiatation,
+the single object is created on application startup. In lazy instantiation,
+the single object is created when only when first requested. However, the provided lazy
+instantiation implementation is not thread safe.
 
 ---------------------------------
 Provided Application
 ---------------------------------
+The Singleton Design Pattern is often useful for building loggers, as there
+should only be a single logger shared within an application. As an example
+of an application using the Singleton Design Pattern, we have provided an example clasee.
+This class performs simple outputs, and logs its activities with a
+shared logger. Each instantiation can use either the lazy or the eager Singleton
+implementations. The "main.cpp" files in the "complete" and "empty" subdirectories
+create instantiations of each class, call their methods, and check the logger
+output.
 
+---------------------------------
+Filling Out the Incomplete Solution
+---------------------------------
+In the "empty" directory there are two .java files - SingletonLazy.java and
+SingletonEager.java. These files contain comments providing small explanations
+about what to do to complete the lazy and eager singleton classes.
 
 ---------------------------------
 Checking Solution
 ---------------------------------
+In the "empty" directory there is a "main.java".
+"main.java" runs a simple test of both the lazy and eager singleton classes.
+Use the following commands to compile and run the tests within the "empty" directory.
+
+$javac main.java
+$java main
+
+Alternatively, the "complete" directory contains functional eager and lazy
+singleton classes, and an identical "main.java".
