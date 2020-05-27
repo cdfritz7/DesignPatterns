@@ -33,5 +33,5 @@ Checking Solution
 In the "empty" directory there is another python3 file, "main.py".
 "main.py" runs a simple test of both haikus.
 
-Alternatively, the "complete" directory contains functional the functional
-versions, and an identical "main.py" file.
+Alternatively, the "complete" directory contains the functional
+versions of each file, and an identical "main.py" file.

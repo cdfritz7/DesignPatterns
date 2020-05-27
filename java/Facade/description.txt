@@ -1,0 +1,39 @@
+Facade Design Pattern
+
+---------------------------------
+Description
+---------------------------------
+The Facade Design pattern uses an object that serves an simple interface to more
+complex underlying code. The Facade Design pattern is often used to improve the
+usability and readability of software and/or provide an interface with more generic
+functionality.
+
+---------------------------------
+Provided Application
+---------------------------------
+Here we provide an application in "Facade.java" that gets the current time.
+The application is unnecessarily complicated, as there are separate classes to
+get each time measurement (hour, min, sec) however, the Facade class provides
+a simple "get_time" function to consolidate this behavior. "main.java" tests
+the functionality of the facade class.
+
+---------------------------------
+Filling Out the Incomplete Solution
+---------------------------------
+In the "empty" directory there are two .java files. "Facade.java" contains
+skeletons for each class that gets a unit of time, along with the Facade class that
+consolidates the units. There are comments and empty methods suggesting where
+to place the code.
+
+---------------------------------
+Checking Solution
+---------------------------------
+In the "empty" directory there is another python3 file, "main.java".
+"main.java" runs a simple test of the Facade class' get_time method.
+You can use the following to run main.java
+
+$javac main.java
+$java main
+
+Alternatively, the "complete" directory contains functional the functional
+versions, and an identical "main.java" file.

@@ -37,5 +37,5 @@ main.java
 $javac main.java
 $java main
 
-Alternatively, the "complete" directory contains functional the functional
+Alternatively, the "complete" directory contains the functional
 versions, and an identical "main.java" file.
