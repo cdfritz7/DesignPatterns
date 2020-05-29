@@ -1,6 +1,12 @@
 import java.util.ArrayList;
 
 class main{
+
+  public static void assertT(boolean b, String err) throws AssertionError{
+    if(!b)
+      throw new AssertionError(err);
+  }
+
   public static void main(String[] args){
     Client my_client = new Client();
 
@@ -13,10 +19,10 @@ class main{
 
     ArrayList<Command> my_history = my_client.get_history();
 
-    assert my_history.get(0).obj.name == "AAPL" : "First stock name incorrect";
-    assert my_history.get(1).obj.name == "GOOG" : "second stock name incorrect";
-    assert my_history.get(2).obj.name == "GOOG" : "third stock name incorrect";
-    assert my_history.get(3).obj.name == "AAPL" : "fourth stock name incorrect";
+    assertT(my_history.get(0).obj.name == "AAPL", "First stock name incorrect");
+    assertT(my_history.get(1).obj.name == "GOOG", "second stock name incorrect");
+    assertT(my_history.get(2).obj.name == "GOOG", "third stock name incorrect");
+    assertT(my_history.get(3).obj.name == "AAPL", "fourth stock name incorrect");
 
     System.out.println("Tests Passed");
   }

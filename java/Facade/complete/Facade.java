@@ -39,7 +39,7 @@ public class Facade{
     Minutes min = new Minutes();
     Hours hrs = new Hours();
 
-    return sec.get() + ":" + min.get() + ":" + hrs.get();
+    return hrs.get() + ":" + min.get() + ":" + sec.get();
   }
 
 }

@@ -1,0 +1,45 @@
+Strategy Design Pattern
+
+---------------------------------
+Description
+---------------------------------
+The Strategy Design Pattern enables the selection of an algorithm (Strategy)
+to use during run-time instead of compile-time. Typically, the code receives
+instructions at run-time specifying which algorithm, from a family of algorithms,
+to use. This is often accomplished in Object Oriented languages by having each
+concrete algorithm extend an abstract algorithm, then using the appropriate
+concrete algorithm at run-time. It is often useful to have some sort of "Context"
+class that can execute and change strategies. The Strategy Design Pattern allows
+the algorithm to be more independent from the clients that use it. Because of this,
+the Strategy Pattern enables more flexible and reusable code. The Strategy Pattern
+is often used in situations in which some information that influences control logic
+is not known until run-time.
+
+---------------------------------
+Provided Application
+---------------------------------
+The provided application reads in inputs from a file. Each line in the file has
+one of ['add', 'subtract'] as the first word, then two numbers separated
+by spaces. The application reads in each line of the file, then
+changes strategy based on the command in that line. For instance, if the application
+read in 'add 1 2', it would use a context object to use an AddStrategy object to add
+1 and 2. "main.py" reads in from "in.txt", changes strategy with a context object,
+then tests the validity of each resulting execute_strategy() call.
+
+---------------------------------
+Filling Out the Incomplete Solution
+---------------------------------
+In the "empty" directory there are five python3 files and "in.txt". "Context.py"
+holds the context class, "AddStrategy.py" and "SubtractStrategy.py" both hold
+concrete strategies while "Strategy.py" holds the 'abstract' strategy class.
+"main.py" reads in from a file, and tests the Strategy Design Pattern implementation.
+"in.txt" and "main.py" should not be changed.
+
+---------------------------------
+Checking Solution
+---------------------------------
+In the "empty" directory there is a python3 file, "main.py".
+"main.py" runs a simple test of the Strategy Design Pattern implementation.
+
+Alternatively, the "complete" directory contains the functional
+versions of each file, and an identical "main.py" file.

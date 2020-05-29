@@ -1,4 +1,10 @@
 public class main{
+
+  public static void assertT(boolean b, String err) throws AssertionError{
+    if(!b)
+      throw new AssertionError(err);
+  }
+
   public static void main(String[] args){
 
     /* what we will compare our logs to */
@@ -19,8 +25,8 @@ public class main{
     lazy_B.print();
     lazy_A.print();
 
-    assert lazy_A.lazy_log.get_log().equals(expected) : "lazy log not correct";
-    assert lazy_B.lazy_log.get_log().equals(expected) : "lazy log not correct";
+    assertT(lazy_A.lazy_log.get_log().equals(expected), "lazy log A not correct");
+    assertT(lazy_B.lazy_log.get_log().equals(expected), "lazy log B not correct");
 
     System.out.println("Lazy Singleton Test Passed");
 
@@ -39,8 +45,8 @@ public class main{
     eager_B.print();
     eager_A.print();
 
-    assert eager_A.eager_log.get_log().equals(expected) : "eager log not correct";
-    assert eager_B.eager_log.get_log().equals(expected) : "eager log not correct";
+    assertT(eager_A.eager_log.get_log().equals(expected), "eager log A not correct");
+    assertT(eager_B.eager_log.get_log().equals(expected), "eager log B not correct");
 
     System.out.println("Eager Singleton Test Passed");
   }
