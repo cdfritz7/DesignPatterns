@@ -1,0 +1,34 @@
+Adapter Design Patter
+
+---------------------------------
+Description
+---------------------------------
+The Adapter Design Pattern (sometimes the wrapper design pattern) is used to present
+the interface of an existing class as a different interface. It is often used
+to make existing classes work together without having to change their source code.
+
+---------------------------------
+Provided Application
+---------------------------------
+In this example, the Adaptee class has a simple interface to store information
+about a person. However, main.py needs the interface to have getter and setter
+methods for each attribute. To remedy this disparaty, the Adapter class serves
+as a wrapper for the Adaptee class, and provides these getters and setters.
+
+---------------------------------
+Filling Out the Incomplete Solution
+---------------------------------
+In the "empty" directory there are three python3 files. "Adaptee.py" holds the
+class that has an incompatible interface, and is left completed in the "empty" directory.
+"Adapter.py" holds the adapter class and should provide getters and setters for
+each attribute of the Adaptee class. "main.py" runs tests using the interface
+provided by the Adapter class.
+
+---------------------------------
+Checking Solution
+---------------------------------
+In the "empty" directory there is a python3 file, "main.py".
+"main.py" runs a series of tests for the Adapter Design Pattern implementation.
+
+Alternatively, the "complete" directory contains the functional
+versions of each file, and an identical "main.py" file.
