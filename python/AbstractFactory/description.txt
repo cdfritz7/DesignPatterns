@@ -1,0 +1,50 @@
+Abstract Factory Design Pattern
+
+---------------------------------
+Description
+---------------------------------
+The Abstract Factory Design Pattern is a creational design pattern used to
+encapsulate a group of individual factories with a common theme. Generally,
+a single abstract factory is extended by multiple concrete factories. These
+factories share an interface provided by the abstract factory. The client
+instantiates one or more of these concrete factories, and their common interface,
+to create objects that are part of the theme.
+
+This pattern is used to separate the creation of objects from their usage, and
+to create families of common objects. This allows the client to exchange
+concrete factories without changing the code that uses them, even at runtime.
+
+Overall, the Abstract Factory serves to separate the creation of objects from
+the client, and to provide a general interface for creating related objects.
+
+---------------------------------
+Provided Application
+---------------------------------
+The provided application creates four types of documents - Modern Resumes,
+Modern Letters, Legal Resumes, and Legal Letters. The Abstract DocumentFactory
+class is extended by the LegalDocumentFactory and ModernDocumentFactory classes.
+These concrete factory classes return LegalResume, LegalLetter, ModernResume,
+and ModernLetter objects. These objects extend the abstract Letter and Resume
+classes. 
+
+---------------------------------
+Filling Out the Incomplete Solution
+---------------------------------
+In the "empty" directory there are seven python3 files. Each (besides main.py,
+which is complete) contains comments providing small explanations about what to
+do to complete the Abstract Factory Design Pattern implementation.
+
+The classes in LegalDocumentFactory.py and ModernDocumentFactory.py both inherit
+from the class in DocumentFactory.py
+
+The Resume and Letter classes in LegalDocuments.py and ModernDocuments.py inherit
+from the Resume and Letter classes in ModernDocuments.py
+
+---------------------------------
+Checking Solution
+---------------------------------
+In the "empty" directory there is another python3 file, main.py.
+main.py runs a series of tests to check the implementation in the "empty" directory.
+
+Alternatively, the "complete" directory contains functional versions of each
+file, and an identical main.py file.
