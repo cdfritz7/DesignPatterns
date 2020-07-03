@@ -6,7 +6,7 @@ class Resume(object):
     def resume_header(self):
         return "--- Resume ---"
 
-    def ger_resume(self):
+    def get_resume(self):
         '''implemented in child classes, implementation here should reflect that'''
         raise NotImplementedError("__str__ abstract in Resume class")
 

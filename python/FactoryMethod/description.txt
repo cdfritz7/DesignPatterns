@@ -14,6 +14,8 @@ being created. This approach has multiple benefits such as :
 1) Construction of classes with components that have not been predetermined
 2) Reduction of coupling, the code interacts with the interface or abstract class
 containing the factory method and is not necessarily concerned about the details
+behind object creation or differences between classes created by the factory 
+method.
 3) Allowing child classes to choose what type of objects to create
 4) More readable code -> multiple constructors can be replaced with different
 factory methods that have more informative names

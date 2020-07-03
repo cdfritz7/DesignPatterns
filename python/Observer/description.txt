@@ -36,4 +36,4 @@ In the "empty" directory there is another python3 file, main.py.
 main.py runs a series of tests to check the implementation in the "empty" directory.
 
 Alternatively, the "complete" directory contains functional versions of each
-file, and an identical main.java file.
+file, and an identical main.py file.
