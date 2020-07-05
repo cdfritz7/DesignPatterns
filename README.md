@@ -73,4 +73,4 @@ While creating this repository, I used Wikipedia to understand the design patter
 It's a good resource if you want to go more in depth, look into other patterns,
 or find simple implementations in other languages.
 
-[List of Design Patterns]https://en.wikipedia.org/wiki/Software_design_pattern
+[List of Design Patterns](https://en.wikipedia.org/wiki/Software_design_pattern)
