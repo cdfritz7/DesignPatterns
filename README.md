@@ -18,7 +18,7 @@ design patterns.
 - Template
 
 Each design pattern sub-directory has a `complete` directory, an `empty`
-directory, a `description.txt` and a UML diagram. The `complete` directory holds
+directory, and a `description.txt`. The `complete` directory holds
 the completed implementation of the design pattern. The `empty` directory holds
 an incomplete implementation with comments detailing how to fill it in.
 The `description.txt` file gives a description of the design pattern, how/why the design pattern is used, a description of the provided implementation, and instructions
@@ -67,3 +67,10 @@ describing what you would like to see corrected.
 If you'd like to contribute new design patterns, or add design pattern
 implementations in another language, please follow the existing layout and
 open up a pull request.
+
+## Finding More Information
+While creating this repository, I used Wikipedia to understand the design patterns.
+It's a good resource if you want to go more in depth, look into other patterns,
+or find simple implementations in other languages.
+
+[List of Design Patterns]https://en.wikipedia.org/wiki/Software_design_pattern
