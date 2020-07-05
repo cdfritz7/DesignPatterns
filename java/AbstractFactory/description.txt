@@ -32,7 +32,7 @@ Filling Out the Incomplete Solution
 ---------------------------------
 In the "empty" directory there are ten .java files. Each (besides main.java)
 contains comments providing small explanations about what to
-do to complete each portion of the Command Design pattern implementation.
+do to complete each portion of the Abstract Factory implementation.
 
 The classes in LegalDocumentFactory.java and ModernDocumentFactory.java both extend
 the class in DocumentFactory.java

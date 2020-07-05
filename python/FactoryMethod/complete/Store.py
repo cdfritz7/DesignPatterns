@@ -10,7 +10,7 @@ class Store(object):
 
     def add(self, name):
         """
-        create a new product with the product classe's
+        create a new product with the product class'
         make_product method and add it to our list
         """
         new_product = self.make_product(name)
@@ -18,7 +18,7 @@ class Store(object):
 
     def remove(self, name):
         """
-        find the product with 'name' using the product classe's
+        find the product with 'name' using the product class'
         is_equal method and delete it
         """
         for i in range(len(self.products)-1, -1, -1):

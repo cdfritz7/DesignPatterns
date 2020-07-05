@@ -7,7 +7,7 @@ if __name__ == "__main__":
 
     '''
     create our music store object, and run tests by adding and deleting products
-    removals in the vide store are case sensitive
+    removals in the video store are case sensitive
     '''
     video_store = VideoStore()
 

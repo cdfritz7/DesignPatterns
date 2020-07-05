@@ -1,0 +1,54 @@
+Factory Method Design Pattern
+
+---------------------------------
+Description
+---------------------------------
+The Factory Method Design Pattern is a creational pattern that uses class methods
+to create objects without having to specify the exact class of the object being
+created. These objects are created using a 'factory method' instead of using a
+constructor. These factory methods are specified in an interface or in a abstract
+class, then implemented or overridden in child classes.
+
+The factory method serves to decouple the creation of objects from the objects
+being created. This approach has multiple benefits such as :
+1) Construction of classes with components that have not been predetermined
+2) Reduction of coupling, the code interacts with the interface or abstract class
+containing the factory method and is not necessarily concerned about the details
+behind object creation or differences between classes created by the factory
+method.
+3) Allowing child classes to choose what type of objects to create
+4) More readable code -> multiple constructors can be replaced with different
+factory methods that have more informative names
+
+---------------------------------
+Provided Application
+---------------------------------
+The provided application uses the Factory Method design pattern to create two
+different types of 'stores'. A 'music store' and the 'video store', which create
+'music products' and 'video products' respectively. The MusicStore and VideoStore
+classes are our concrete creator classes that inherit from the Store class.
+These contain the factory methods that create the VideoProduct and MusicProduct
+objects. This separation allows us to decouple the 'Store' from the 'Product',
+if we wanted to, we could easily change the logic of the products, without
+changing any store logic - and vice versa. The Store class contains functionality
+such as adding, deleting, and displaying inventory, which is tested in main.py
+
+---------------------------------
+Filling Out the Incomplete Solution
+---------------------------------
+In the "empty" directory there are seven .java files. Each (besides main.java)
+contains comments providing small explanations about what to
+do to complete each portion of the Factory Method Design pattern implementation.
+
+---------------------------------
+Checking Solution
+---------------------------------
+In the "empty" directory there is a "main.java".
+"main.java" runs a simple test of the Factory Method implementation.
+Use the following commands to compile and run the tests within the "empty" directory.
+
+$javac main.java
+$java main
+
+Alternatively, the "complete" directory contains the completed Factory Method
+implementation.
