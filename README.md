@@ -1,4 +1,4 @@
-##About
+## About
 This project serves to explain and give examples for common design
 patterns. Each design pattern example is written in both Python and Java.
 Additionally, each example has corresponding 'empty' code that is meant to be
@@ -24,8 +24,8 @@ an incomplete implementation with comments detailing how to fill it in.
 The `description.txt` file gives a description of the design pattern, how/why the design pattern is used, a description of the provided implementation, and instructions
 on how to test that implementation.
 
-##Running Code
-###Python
+## Running Code
+### Python
 All provided python code is written in python3, so a python3 interpreter is
 needed to run these examples. Aside from that, there should be not other
 dependencies.
@@ -39,7 +39,7 @@ $python3 main.py
 Instructions for running code can also be found in the `description.txt` for
 each design pattern .
 
-###Java
+### Java
 The provided Java code was compiled and run with Java 11.0.6. However, the code
 is not fancy, and should run with any modern java version. The only imports used
 in the java code come from the JDK, so no external dependencies are needed if
@@ -59,7 +59,7 @@ $rm *.class
 Instructions for running code can also be found in the `description.txt` for
 each design pattern.
 
-##Contributing
+## Contributing
 Any contributions to the repository would be greatly appreciated. For bugs,
 small comments or spelling/grammar/content correction, please open up an issue
 describing what you would like to see corrected.
